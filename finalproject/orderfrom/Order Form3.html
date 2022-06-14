@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Form Order </title>
+    <style>
+        body {
+          background: url(img/Background.jpeg);
+        }
+        
+        h1 {
+          color: white;
+          text-align: center;
+        }
+        
+        p1 {
+          font-family: verdana;
+          font-size: 30px;
+          text-align: center;
+          margin : 500px;
+        }
+        p4 {
+          font-family: verdana;
+          font-size: 20px;
+          text-align: center;
+          margin : 420px;
+        }
+        div {
+          background-color: rgb(189, 222, 242);;
+          width: 300px;
+          border: 15px solid rgb(75, 218, 228);
+          padding: 50px;
+          margin-left: 400px; }
+          
+          
+</style>
+</head>
+<body> 
+              </p>
+              <p>
+                <p1><strong> Form Order </p1></strong><br>
+                <br>
+                <p4>Silahkan Isi Form untuk Order Produk </p4>
+                <br> <br>
+                <div>
+                  <span>Nama Lengkap &nbsp; &nbsp; &nbsp;:</span>
+                  <input type="text" id="nama"> 
+                <br>
+                  <span>Nomor Handphone:</span>
+                  <input type="text" id="nomor">
+                <br>
+                
+                  <span>Alamat Lengkap &nbsp; &nbsp; :</span>
+                  <input type="text" id="alamat">
+                
+                <br>
+                  <span>Alamat E-Mail &nbsp; &nbsp; &nbsp; :</span>
+                  <input type="text" id="email">
+                <br>
+                <br>
+                  <span>Jumlah &nbsp; &nbsp; &nbsp; :</span>
+                  <input type="number" id="jumlah"> <br><br>
+                <label for="versi">Versi</label><br>
+    			<select id="versi" name="versi">
+      			<option value="Hello Version"> Hello Version </option>
+            <option value="Future Version"> Future Version </option>
+   			 </select>
+              </p>
+              <button onclick="kirim()">KIRIM</button>
+              <p>
+                <p2 id="tampilan"></p2>
+              </p>
+              <p></p>
+              <p><b><a href="Payment.html" target="_blank"> Payment</a></b></p>
+
+
+
+    </div>
+    <p3 class="line-color"></p3>
+    <p4 id="footer" class="footer"></p4>
+    <script>
+      var id_nama = document.getElementById("nama");
+      var id_nomor = document.getElementById("nomor");
+      var id_alamat = document.getElementById("alamat");
+      var id_email = document.getElementById("email");
+      var id_jumlah = document.getElementById("jumlah");
+      var id_versi = document.getElementById("versi");
+      var id_tamp = document.getElementById("tampilan");
+
+      function kirim(){
+        id_tamp.innerText 
+        =" Nama Lengkap : " + id_nama.value
+        + " Nomor Handphone : " + id_nomor.value
+        + " Alamat Lengkap : " +id_alamat.value
+        + " Alamat E-Mail : " +id_email.value
+        + " Jumlah : " + id_jumlah.value
+        + " Versi : " + id_versi.value;
+      }
+</script>
+</head>
+
+</body>
+</html>

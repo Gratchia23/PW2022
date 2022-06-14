@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
+<style>
+  body {
+    background: url(img/Background.jpeg);
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: verdana;
+    font-size: 30px;
+    text-align: center;
+  }
+  div {
+    background-color: rgb(189, 222, 242);;
+    width: 300px;
+    border: 15px solid rgb(75, 218, 228);
+    padding: 50px;
+    margin-left: 380px; }
+    
+    
+</style>
+ 
+<script>
+function tampilkan(){
+ 
+  var pilihan_pembayaran=document.getElementById("form1").select1.value;
+  var p_payment=document.getElementById("paymentmethod");
+  var p_total=document.getElementById("totalpembayaran");
+  
+ 
+  if (pilihan_pembayaran=="Paypal")
+    {
+        p_payment.innerHTML="No Pembayaran : 100786381283";
+    }
+  else if (pilihan_pembayaran=="Indomaret")
+    {
+        p_payment.innerHTML="No Pembayaran : 980136381HJ9";
+    }
+  else if (pilihan_pembayaran=="Alfamart")
+    {
+        p_payment.innerHTML="No Pembayaran : 6381Z87246P2";
+    }
+  else if (pilihan_pembayaran=="Transfer Bank")
+    {
+        p_payment.innerHTML="No Pembayaran : 900056241870";
+    }
+    
+}
+</script>s
+</head>
+<body>
+<h2>Payment</h2>
+ 
+ <ul>
+ <div>
+        <label for="total"> Total Pembayaran : </label>
+        <input placeholder="Total" type="text" name="jumlah" id="jumlah" minlength="0" maxlength="10">
+
+    <br>
+<form id="form1" name="form1" onsubmit="return false">
+  <label for="select1">Metode Pembayaran: </label>
+  <select id="select1" name="select1">
+    <option value="Paypal">Paypal</option>
+    <option value="Indomaret">Indomaret</option>
+    <option value="Alfamart">Alfamart</option>
+    <option value="Transfer Bank">Transfer Bank</option> <br>
+  </select>
+  <input type="submit" value="Submit" onclick="tampilkan()">
+  
+</form>
+ 
+<p id="paymentmethod"></p>
+
+  <a href="success.html" class="button">Payment</a>
+</div>
+ 
+</body>
+</html>

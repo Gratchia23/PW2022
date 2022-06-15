@@ -35,9 +35,8 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/anime1.jpg">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <title>DreamStore</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Dream Store</title>
 </head>
 <body>
     <div class="alert alert-warning" role="alert">  
@@ -46,17 +45,17 @@ if (isset($_POST['submit'])) {
  
     <div class="container"> 
         <form action="" method="POST" class="login-email"> 
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p> 
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
             <div class="input-group"> 
-                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required> 
+                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
             </div>
             <div class="input-group"> 
                 <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required> 
             </div>
             <div class="input-group"> 
-                <button name="submit" class="btn">Login </button> 
+                <button name="submit" class="btn">Ayo login </button> 
             </div>
-            <p class="login-register-text">Anda belum punya akun? <a href="registrasi.php">Register</a></p>
+            <p class="login-register-text">Belum punya akun? <a href="registrasi.php">Daftar Sekarang</a></p> 
         </form>
     </div>
 </body>
